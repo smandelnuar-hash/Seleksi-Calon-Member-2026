@@ -87,11 +87,11 @@ function bukaAmplop() {
     
     // Tentukan teks dan styling berdasarkan status
     if (currentData.status === 'LULUS') {
-      statusElement.innerText = 'Berdasarkan hasil rapat dewan guru, peserta didik tersebut dinyatakan LULUS dan diterima di SMAN 8 Nusa Arutala.';
+      statusElement.innerText = 'Berdasarkan hasil rapat dewan guru, peserta didik dinyatakan LULUS dan diterima sebagai penyihir muda SMAN 8 Nusa Arutala.';
       statusElement.className = 'status-text status-lulus';
       document.getElementById('btnGrup').style.display = 'block';
     } else {
-      statusElement.innerText = 'Berdasarkan hasil rapat dewan guru, peserta didik tersebut dinyatakan BELUM LULUS seleksi penerimaan.';
+      statusElement.innerText = 'Berdasarkan hasil rapat dewan guru, peserta didik dinyatakan TIDAK LULUS seleksi penerimaan.';
       statusElement.className = 'status-text status-tidak-lulus';
       document.getElementById('btnGrup').style.display = 'none';
     }

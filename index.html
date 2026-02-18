@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMAN 8 NUSA ARUTALA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="Logo-smanduar.png" alt="Logo SMANDUAR">
+    <h1>PENGUMUMAN KELULUSAN SMAN 8 NUSA ARUTALA</h1>
+  </header>
+
+  <!-- LAYAR 1: FORM INPUT -->
+  <main id="formScreen">
+    <div class="card">
+      <h2>Cek Status Kelulusan</h2>
+      <div class="form-group">
+        <label>Nama OC</label>
+        <input type="text" id="nama" placeholder="Masukkan Nama OC">
+      </div>
+      <div class="form-group">
+        <label>NISN</label>
+        <input type="text" id="nisn" placeholder="Masukkan NISN">
+      </div>
+      <button onclick="cekKelulusan()">Lihat Hasil</button>
+    </div>
+  </main>
+
+  <!-- LAYAR 2: AMPLOP -->
+  <section id="amplopScreen">
+    <div class="envelope-container" onclick="bukaAmplop()">
+      <div class="envelope">
+        <!-- Body amplop (background) -->
+        <img src="amplop-body.png" alt="Body" class="body-img">
+        
+        <!-- Kertas surat (muncul saat dibuka) -->
+        <img src="kertas.png" alt="Surat" class="letter-img">
+        
+        <!-- Flap (tutup amplop) - di atas -->
+        <img src="amplop-flap.png" alt="Flap" class="flap-img">
+        
+        <!-- Stempel (hilang saat diklik) -->
+        <img src="stemple.png" alt="Stempel" class="seal-img">
+      </div>
+      <p class="amplop-hint">Klik amplop untuk melihat hasil</p>
+    </div>
+  </section>
+
+  <!-- LAYAR 3: SURAT KELULUSAN -->
+  <section id="suratScreen">
+    <div class="card surat-card">
+      <h2 class="surat-title">SURAT KETERANGAN KELULUSAN</h2>
+      <p class="surat-nomor">Nomor: 421/SMANDUAR/2026</p>
+
+      <p class="pantun">
+      Di bawah naungan Mata Air Amerta,<br>
+      di bawah restu Sang Hyang Widyamerta,<br>
+      serta dengan kesaksian Batu Penguji yang hidup,
+      </p>
+
+      <p class="surat-intro">Yang bertanda tangan di bawah ini, Kepala SMAN 8 NUSA ARUTALA, menerangkan bahwa:</p>
+
+      <table class="data-table">
+        <tr>
+          <td>Nama</td>
+          <td>: <span id="sNama"></span></td>
+        </tr>
+        <tr>
+          <td>NISN</td>
+          <td>: <span id="sNisn"></span></td>
+        </tr>
+      </table>
+
+      <p id="sStatus" class="status-text"></p>
+
+      <p class="surat-footer">Demikian surat keterangan ini disampaikan untuk digunakan sebagaimana mestinya.</p>
+
+      <div class="ttd-section">
+        <p>Kepala Sekolah</p>
+        <p><strong>Drs. Rembulan</strong></p>
+      </div>
+
+      <!-- Tombol ke screen grup, hanya muncul jika LULUS -->
+      <button id="btnGrup" onclick="keGrup()" class="btn-grup" style="display:none;"> Gabung pada grup utama</button>
+      <button onclick="kembali()" class="btn-kembali">Kembali</button>
+    </div>
+  </section>
+
+  <!-- LAYAR 4: LINK GRUP (hanya untuk yang LULUS) -->
+  <section id="grupScreen">
+    <div class="card grup-card">
+      <div class="grup-icon"></div>
+      <h2 class="grup-title">Selamat, Kamu Resmi Diterima!</h2>
+      <p class="grup-desc">
+        Anda dinyatakan <strong>LULUS</strong> dan resmi menjadi murid dari SMAN 8 Nusa Arutala.<br><br>
+       Langkah selanjutnya, silahkan bergabung ke <strong>Grup Aula Utama </strong> SMAN 8 Nusa Arutala dan menjadi bagian dari kisah kami.
+      </p>
+
+      <a href="https://chat.whatsapp.com/DG8yE1w2Z9BBh4gOgr3SJE" target="_blank" class="btn-link-grup">
+         Klik untuk Bergabung ke Grup WhatsApp
+      </a>
+
+      <p class="grup-note"> Link hanya dapat digunakan sekali. Pastikan kamu bergabung segera.</p>
+
+      <button onclick="kembali()" class="btn-kembali" style="margin-top: 10px;">Kembali ke Awal</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

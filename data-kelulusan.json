@@ -160,7 +160,7 @@
   { "nama": "Rebecca Johanna", "nisn": "8026135", "status": "LULUS" },
   { "nama": "Nanang Burgough", "nisn": "8026136", "status": "TIDAK LULUS" },
   { "nama": "Shina Agnirasya", "nisn": "8026137", "status": "LULUS" },
-  { "nama": "Arkaana Amara", "nisn": "8026138", "status": "TIDAK LULUS" },
+  { "nama": "Arkaana Amara", "nisn": "8026138", "status": "LULUS" },
   { "nama": "Vasillias", "nisn": "8026139", "status": "LULUS" },
   { "nama": "Nanaz", "nisn": "8026140", "status": "LULUS" },
   { "nama": "Haru Wakaba", "nisn": "8026141", "status": "TIDAK LULUS" },
@@ -238,4 +238,5 @@
   { "nama": "Darriel Nathan Firmanyash", "nisn": "8026213", "status": "LULUS" },
   { "nama": "Aiko", "nisn": "8026214", "status": "LULUS" },
   { "nama": "Averin Mahendra", "nisn": "8026215", "status": "LULUS" }
+
 ]
